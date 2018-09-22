@@ -15,7 +15,7 @@ int main(){
     std::cout << "Front: "<< list.GetFront()<<std::endl;
     std::cout << "Current: "<< list.GetCurrent()<<std::endl;
     //set the back pointer to node 2
-    list.SetBack(node2.GetNext());
+    list.SetBack(node.GetNext());
 
     std::cout << "Back: "<< list.GetBack() << std::endl;
     std::cout << "Front: "<< list.GetFront()<<std::endl;

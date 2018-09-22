@@ -8,10 +8,10 @@ class LLNode{
         void SetData(int);
         void SetNext(LLNode&);
         int GetData();
-        //TODO fix the get next function
+        
         LLNode* GetNext();
-
-        LLNode operator=(const LLNode& myNode){
-            return myNode;
+        //TODO fix the operator overload
+        LLNode& operator=(LLNode& myNode){
+            std::copy(*this,myNode);
         }
 };
