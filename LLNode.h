@@ -12,6 +12,7 @@ class LLNode{
         LLNode* GetNext();
         //TODO fix the operator overload
         LLNode& operator=(LLNode& myNode){
-            std::copy(*this,myNode);
+            LLNode node = myNode;
+            return node;
         }
 };
